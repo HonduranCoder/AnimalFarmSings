@@ -13,29 +13,27 @@ const catSound = document.getElementById('cat-sound');
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
-  horseEl.addEventListener('click', () => {
-    document.getElementById("header").innerHTML ="Horse!"
-});
-
-dogEl.addEventListener('click', () => {
-  document.getElementById("header").innerHTML ="Dog!"
-});
-
-catEl.addEventListener('click', () => {
-  document.getElementById("header").innerHTML ="Cat!"
-});
+function playSoundAndChange(sound, animalName){
+  sound.play(); 
+  document.getElementById("header").innerHTML = animalName;
+}
 
 horseEl.addEventListener('click', () => {
-  horseSound.play();
+    playSoundAndChange(horseSound, 'horse')
 });
 
 dogEl.addEventListener('click', () => {
-  dogSound.play();
+  playSoundAndChange(dogSound, 'dog')
 });
 
 catEl.addEventListener('click', () => {
-  catSound.play();
+  playSoundAndChange(catSound, 'cat')
 });
+
+/*setTimeout(()=>{
+  document.getElementById("header").innerHTML = "Animal Farm";
+}, 2000)
+*/
 
 /*document.addEventListener('keydown', (e) =>{
   let key = event.key; 
