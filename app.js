@@ -43,3 +43,12 @@ catEl.addEventListener('click', () => {
   alert (`Key pressed ${key} /n key code value: ${code}`; 
 }, false);
 */
+
+/*document.addEventListener('keydown', function (event) {
+  if (event.key === 'd') {
+    document.body.style = "color: white; background-color: #111111";
+  }
+  if (event.key === 'l') {
+    document.body.style = '';
+  }
+});*/
