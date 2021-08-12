@@ -19,7 +19,7 @@ function playSoundAndChange(sound, animalName){
 }
 
 horseEl.addEventListener('click', () => {
-    playSoundAndChange(horseSound, 'horse')
+   playSoundAndChange(horseSound, 'horse')
 });
 
 dogEl.addEventListener('click', () => {
